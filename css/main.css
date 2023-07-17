@@ -1,0 +1,252 @@
+/* start globel roles */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+  }
+  :root {
+      --main-color: #E8684D ;
+      --main-transition : 0.3s ;
+  }
+  html {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+      font-family: 'Cairo', sans-serif;
+  }
+  .containar {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 15px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 1200px){
+  .container {
+      width: 1170px;
+  }
+  }
+  @media (min-width:992px) {
+    .containar {
+    max-width: 1140px;
+  }
+  }
+  /* end globel roles */
+/* title */
+  .title {
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 100px 0;
+    width: fit-content;
+    position: relative;
+    
+}
+.title::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    background-color: var(--main-color);
+    bottom: 95px;
+}
+/* title */
+
+  header{
+    background-color: #000000;
+   position: relative;
+   height: 100px;
+  }
+  header .containar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    position: relative;
+}
+ header .containar .logo img {
+    width: 196px;
+  }
+  header .header-icon {
+    display: flex;
+   
+    align-items: center;
+    gap: 10px;
+}
+header .header-icon img {
+    width: 28px;
+}
+/* end header  */
+/* start landing */
+.landing {
+    background-color: #000000;
+}
+.landing .containar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.landing .text h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+}
+.landing .text p {
+font-size: 23px;
+font-weight: normal;
+color: #cecaca;
+line-height: 1.5;
+  
+}
+.landing .image img {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+   
+}
+@media (max-width:992px) {
+    .landing .image img  {
+        display: none;
+    }
+    .landing  .text {
+        max-width: 600px;
+    }
+    .landing .containar {
+        justify-content: center;
+        text-align: center;
+    }
+  }
+  @media (max-width:720px) {
+    .landing .text h1 {
+        font-size: 28px;
+       
+    }
+    .landing .text p {
+        font-size: 17px;
+        margin: 10px auto;
+        padding: 0 15px;
+    }
+  }
+/* end landing */
+/* :start portfolio  */
+.portfolio {
+    padding: 0 0 100px 0;
+}
+.grid-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.grid-image img {
+    width: 100%;
+}
+@media (max-width:720px) {
+    .grid-image {
+        gap:10px;
+    }
+  }
+/* end portfolio  */
+/* start Testimonials */
+.Testimonials {
+    background-color: #000;
+    padding: 0 0 100px 0;
+    height: 100vh;
+    position: relative;
+}
+.Testimonials .title {
+    color: white;
+    }
+.Testimonials .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Testimonials .icon {
+    text-align: center;
+}
+.Testimonials .icon  img {
+    height: 75px;
+}
+.Testimonials h2 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.Testimonials  p {
+    width: 500px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    color: #cecaca;
+    line-height: 1.3;
+}
+.Testimonials .content img {
+    height: 15px;
+}
+.test-content {
+    position: relative;
+    top: 150px;
+   }
+@media (max-width:720px) {
+    .Testimonials .content img {
+        display: none;
+    }
+    .Testimonials .content {
+        justify-content: center;
+    }
+    .Testimonials .icon img {
+        height: 50px;
+    }
+  }
+/* .content img {
+    display: none;
+} */
+/* end Testimonials */
+/* start contact  */
+
+.contact-text h3 {
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+    width: 300px;
+}
+.contact-text p {
+    font-size: 17px;
+}
+.contact-text span {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0 0 0;
+}
+.grid-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+input {
+    display: block;
+    padding: 15px;
+}
+button {
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+}
+textarea {
+    padding: 15px;
+}
+
+/* end contact  */
